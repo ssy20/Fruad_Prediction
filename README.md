@@ -1,29 +1,14 @@
 # Fruad_Prediction
-A tree based model to predict whether a transaction is a fraud or not.
+A tree based model to predict the probability of a transaction being fraud.
 
-# Dataset
-- user_id : Id of the user. Unique for each user
+# Problem Statement
+Whenever an online order is placed by a user at E-commerce websites, there is a risk that the user might be performing some fraudulent activities.  The goal of this project is to predict the probability that the first transaction of a new user is fraudulent. 
 
-- signup_time : the time when the user created her account 
 
-- purchase_time : the time when the user bought the item 
-
-- purchase_value : the cost of the item purchased 
-
-- device_id : the device id. Unique for each device. I.e., same device ID means that the same physical device was used for the transaction
-
-- source : user marketing channel: ads, SEO, Direct
-
-- browser : the browser used by the user
-
-- sex : Male/Female
-
-- age : user age
-
-- ip_address : user numeric ip address
-
-- class : this is what we are trying to predict: whether the activity was fraudulent (1) or not (0)
-
+# Description
+- Fraud_Data.csv: Demographic-related information about new users, and whether their first transactions on the site are fraudulent or not.
+- IpAddress.csv: The dataset can be used to get user country based on their Ip address.
+- fraud_detection.ipynb: A supervised machine learning model to predict the probability
 # Model Result
 Random Forest 
 | cutoff  |  false positive rate| true postive rate  |  accuracy|
